@@ -1,4 +1,5 @@
 [build]
+  base = "openclaw-engine-monitor"
   command = "npm run build"
   publish = "dist"
 
