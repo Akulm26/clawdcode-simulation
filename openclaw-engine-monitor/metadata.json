@@ -1,0 +1,5 @@
+{
+  "name": "OpenClaw Engine Monitor",
+  "description": "A visual system trace monitor for the OpenClaw framework architecture.",
+  "requestFramePermissions": []
+}
