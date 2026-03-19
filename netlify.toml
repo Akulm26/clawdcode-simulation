@@ -1,0 +1,9 @@
+[build]
+  base = "openclaw-engine-monitor"
+  command = "npm run build"
+  publish = "openclaw-engine-monitor/dist"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
