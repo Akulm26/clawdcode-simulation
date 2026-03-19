@@ -1,7 +1,7 @@
 [build]
   base = "openclaw-engine-monitor"
   command = "npm run build"
-  publish = "openclaw-engine-monitor/dist"
+  publish = "dist"
 
 [[redirects]]
   from = "/*"
