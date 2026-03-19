@@ -1,0 +1,269 @@
+<svg width="100%" viewBox="0 0 680 1060" xmlns="http://www.w3.org/2000/svg">
+<style>
+  :root {
+    --color-text-primary: #2C2C2A;
+    --color-text-secondary: #5F5E5A;
+    --color-text-tertiary: #888780;
+    --color-background-secondary: #F1EFE8;
+    --color-border-tertiary: rgba(0,0,0,0.15);
+    --bg: #F1EFE8;
+    --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #2C2C2A; }
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --color-text-primary: #E8E6DE;
+      --color-text-secondary: #B4B2A9;
+      --color-text-tertiary: #888780;
+      --color-background-secondary: #2C2C2A;
+      --color-border-tertiary: rgba(255,255,255,0.15);
+    }
+  }
+  text { font-family: var(--font-sans); }
+  .th { font-size: 14px; font-weight: 500; fill: var(--color-text-primary); }
+  .ts { font-size: 12px; font-weight: 400; fill: var(--color-text-secondary); }
+  .arr { stroke: var(--color-text-secondary); stroke-width: 1.5; }
+  .leader { stroke: var(--color-text-tertiary); stroke-width: 0.5; stroke-dasharray: 3 2; }
+
+  /* Color ramps - light mode */
+  .c-teal > rect, .c-teal > circle, .c-teal > ellipse { fill: #E1F5EE; stroke: #0F6E56; }
+  .c-teal .th { fill: #085041; } .c-teal .ts { fill: #0F6E56; }
+  .c-purple > rect { fill: #EEEDFE; stroke: #534AB7; }
+  .c-purple .th { fill: #3C3489; } .c-purple .ts { fill: #534AB7; }
+  .c-coral > rect { fill: #FAECE7; stroke: #993C1D; }
+  .c-coral .th { fill: #712B13; } .c-coral .ts { fill: #993C1D; }
+  .c-pink > rect { fill: #FBEAF0; stroke: #993556; }
+  .c-pink .th { fill: #72243E; } .c-pink .ts { fill: #993556; }
+  .c-gray > rect { fill: #F1EFE8; stroke: #5F5E5A; }
+  .c-gray .th { fill: #444441; } .c-gray .ts { fill: #5F5E5A; }
+  .c-blue > rect { fill: #E6F1FB; stroke: #185FA5; }
+  .c-blue .th { fill: #0C447C; } .c-blue .ts { fill: #185FA5; }
+  .c-green > rect { fill: #EAF3DE; stroke: #3B6D11; }
+  .c-green .th { fill: #27500A; } .c-green .ts { fill: #3B6D11; }
+  .c-amber > rect { fill: #FAEEDA; stroke: #854F0B; }
+  .c-amber .th { fill: #633806; } .c-amber .ts { fill: #854F0B; }
+  .c-red > rect { fill: #FCEBEB; stroke: #A32D2D; }
+  .c-red .th { fill: #791F1F; } .c-red .ts { fill: #A32D2D; }
+
+  @media (prefers-color-scheme: dark) {
+    .c-teal > rect, .c-teal > circle, .c-teal > ellipse { fill: #085041; stroke: #5DCAA5; }
+    .c-teal .th { fill: #9FE1CB; } .c-teal .ts { fill: #5DCAA5; }
+    .c-purple > rect { fill: #26215C; stroke: #AFA9EC; }
+    .c-purple .th { fill: #CECBF6; } .c-purple .ts { fill: #AFA9EC; }
+    .c-coral > rect { fill: #4A1B0C; stroke: #F0997B; }
+    .c-coral .th { fill: #F5C4B3; } .c-coral .ts { fill: #F0997B; }
+    .c-pink > rect { fill: #4B1528; stroke: #ED93B1; }
+    .c-pink .th { fill: #F4C0D1; } .c-pink .ts { fill: #ED93B1; }
+    .c-gray > rect { fill: #2C2C2A; stroke: #B4B2A9; }
+    .c-gray .th { fill: #D3D1C7; } .c-gray .ts { fill: #B4B2A9; }
+    .c-blue > rect { fill: #042C53; stroke: #85B7EB; }
+    .c-blue .th { fill: #B5D4F4; } .c-blue .ts { fill: #85B7EB; }
+    .c-green > rect { fill: #173404; stroke: #97C459; }
+    .c-green .th { fill: #C0DD97; } .c-green .ts { fill: #97C459; }
+    .c-amber > rect { fill: #412402; stroke: #EF9F27; }
+    .c-amber .th { fill: #FAC775; } .c-amber .ts { fill: #EF9F27; }
+    .c-red > rect { fill: #501313; stroke: #F09595; }
+    .c-red .th { fill: #F7C1C1; } .c-red .ts { fill: #F09595; }
+  }
+</style>
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </marker>
+</defs>
+
+<!-- Grey background -->
+<rect x="0" y="0" width="680" height="1060" rx="12" fill="var(--bg)"/>
+
+<!-- ============ PART 1: PRIYA ============ -->
+<text class="th" x="40" y="30" fill="var(--color-text-primary)">Part 1 — Priya sends a message</text>
+<text class="ts" x="40" y="50" fill="var(--color-text-secondary)">"Pull my Jira sprint status and summarize it."</text>
+
+<g class="c-pink">
+  <rect x="40" y="68" width="120" height="44" rx="8" stroke-width="0.5"/>
+  <text class="th" x="100" y="90" text-anchor="middle" dominant-baseline="central">Priya</text>
+</g>
+
+<line x1="100" y1="112" x2="100" y2="148" class="arr" marker-end="url(#arrow)"/>
+<text class="ts" x="112" y="136">Telegram msg</text>
+
+<!-- ============ PART 2: GATEWAY ============ -->
+<text class="th" x="340" y="156" text-anchor="middle" fill="var(--color-text-primary)">Part 2 — the gateway</text>
+
+<g class="c-teal">
+  <rect x="40" y="166" width="600" height="130" rx="16" stroke-width="0.5"/>
+  <text class="th" x="340" y="190" text-anchor="middle" dominant-baseline="central">Gateway (single Node.js process)</text>
+</g>
+
+<g class="c-gray">
+  <rect x="60" y="210" width="95" height="36" rx="6" stroke-width="0.5"/>
+  <text class="ts" x="107" y="228" text-anchor="middle" dominant-baseline="central">Telegram</text>
+</g>
+<g class="c-gray">
+  <rect x="168" y="210" width="95" height="36" rx="6" stroke-width="0.5"/>
+  <text class="ts" x="215" y="228" text-anchor="middle" dominant-baseline="central">WhatsApp</text>
+</g>
+<g class="c-gray">
+  <rect x="276" y="210" width="80" height="36" rx="6" stroke-width="0.5"/>
+  <text class="ts" x="316" y="228" text-anchor="middle" dominant-baseline="central">Slack</text>
+</g>
+<g class="c-gray">
+  <rect x="369" y="210" width="80" height="36" rx="6" stroke-width="0.5"/>
+  <text class="ts" x="409" y="228" text-anchor="middle" dominant-baseline="central">Discord</text>
+</g>
+<g class="c-gray">
+  <rect x="462" y="210" width="95" height="36" rx="6" stroke-width="0.5"/>
+  <text class="ts" x="509" y="228" text-anchor="middle" dominant-baseline="central">iMessage</text>
+</g>
+<g class="c-gray">
+  <rect x="570" y="210" width="55" height="36" rx="6" stroke-width="0.5"/>
+  <text class="ts" x="597" y="228" text-anchor="middle" dominant-baseline="central">15+</text>
+</g>
+
+<text class="ts" x="340" y="272" text-anchor="middle" fill="var(--color-text-secondary)">All adapters normalize to one universal message format</text>
+
+<line x1="240" y1="296" x2="240" y2="340" class="arr" marker-end="url(#arrow)"/>
+<text class="ts" x="252" y="324" fill="var(--color-text-secondary)">Universal msg</text>
+
+<!-- ============ PART 3: LLM + PI AGENT ============ -->
+<text class="th" x="340" y="356" text-anchor="middle" fill="var(--color-text-primary)">Part 3 — LLM + PI agent</text>
+
+<g class="c-purple">
+  <rect x="80" y="372" width="200" height="56" rx="8" stroke-width="0.5"/>
+  <text class="th" x="180" y="392" text-anchor="middle" dominant-baseline="central">LLM (the brain)</text>
+  <text class="ts" x="180" y="412" text-anchor="middle" dominant-baseline="central">Claude / GPT / Gemini</text>
+</g>
+
+<g class="c-coral">
+  <rect x="380" y="372" width="200" height="56" rx="8" stroke-width="0.5"/>
+  <text class="th" x="480" y="392" text-anchor="middle" dominant-baseline="central">PI Agent (the hands)</text>
+  <text class="ts" x="480" y="412" text-anchor="middle" dominant-baseline="central">Execute, create, browse</text>
+</g>
+
+<line x1="280" y1="392" x2="378" y2="392" class="arr" marker-end="url(#arrow)"/>
+<text class="ts" x="330" y="385" text-anchor="middle" fill="var(--color-text-secondary)">Code</text>
+<line x1="378" y1="408" x2="280" y2="408" class="arr" marker-end="url(#arrow)"/>
+<text class="ts" x="330" y="434" text-anchor="middle" fill="var(--color-text-secondary)">Results / errors</text>
+
+<g class="c-amber">
+  <rect x="310" y="444" width="140" height="28" rx="6" stroke-width="0.5"/>
+  <text class="ts" x="380" y="458" text-anchor="middle" dominant-baseline="central">Feedback loop</text>
+</g>
+
+<rect x="370" y="362" width="220" height="120" rx="12" fill="none" stroke="var(--color-text-secondary)" stroke-width="0.5" stroke-dasharray="4 3" opacity="0.5"/>
+<text class="ts" x="480" y="475" text-anchor="middle" fill="var(--color-text-tertiary)">Sandbox (Docker)</text>
+
+<g class="c-blue">
+  <rect x="430" y="502" width="60" height="30" rx="6" stroke-width="0.5"/>
+  <text class="ts" x="460" y="517" text-anchor="middle" dominant-baseline="central">Jira</text>
+</g>
+<g class="c-blue">
+  <rect x="500" y="502" width="60" height="30" rx="6" stroke-width="0.5"/>
+  <text class="ts" x="530" y="517" text-anchor="middle" dominant-baseline="central">Gmail</text>
+</g>
+<g class="c-blue">
+  <rect x="570" y="502" width="68" height="30" rx="6" stroke-width="0.5"/>
+  <text class="ts" x="604" y="517" text-anchor="middle" dominant-baseline="central">GitHub</text>
+</g>
+
+<line x1="480" y1="482" x2="480" y2="500" class="arr" marker-end="url(#arrow)"/>
+<line x1="530" y1="482" x2="530" y2="500" class="arr" marker-end="url(#arrow)"/>
+<text class="ts" x="530" y="548" text-anchor="middle" fill="var(--color-text-secondary)">Connected via MCP (universal plug)</text>
+
+<line x1="180" y1="428" x2="180" y2="580" class="arr" marker-end="url(#arrow)"/>
+<text class="ts" x="192" y="508" fill="var(--color-text-secondary)">Reads/writes</text>
+
+<!-- ============ PART 4: MEMORY ============ -->
+<text class="th" x="200" y="598" text-anchor="middle" fill="var(--color-text-primary)">Part 4 — memory (filing cabinet)</text>
+
+<g class="c-green">
+  <rect x="40" y="610" width="360" height="160" rx="16" stroke-width="0.5"/>
+  <text class="th" x="220" y="634" text-anchor="middle" dominant-baseline="central">File-based memory system</text>
+</g>
+
+<g class="c-gray">
+  <rect x="60" y="650" width="150" height="36" rx="6" stroke-width="0.5"/>
+  <text class="ts" x="135" y="668" text-anchor="middle" dominant-baseline="central">SOUL.md (identity)</text>
+</g>
+<g class="c-gray">
+  <rect x="230" y="650" width="150" height="36" rx="6" stroke-width="0.5"/>
+  <text class="ts" x="305" y="668" text-anchor="middle" dominant-baseline="central">USER.md (profile)</text>
+</g>
+<g class="c-gray">
+  <rect x="60" y="700" width="150" height="36" rx="6" stroke-width="0.5"/>
+  <text class="ts" x="135" y="718" text-anchor="middle" dominant-baseline="central">Daily logs (diary)</text>
+</g>
+<g class="c-gray">
+  <rect x="230" y="700" width="150" height="36" rx="6" stroke-width="0.5"/>
+  <text class="ts" x="305" y="718" text-anchor="middle" dominant-baseline="central">MEMORY.md (vault)</text>
+</g>
+
+<text class="ts" x="220" y="756" text-anchor="middle" fill="var(--color-text-secondary)">+ semantic search across older logs</text>
+<text class="ts" x="220" y="786" text-anchor="middle" fill="var(--color-text-tertiary)">All plain Markdown files on Priya's server. She owns every byte.</text>
+
+<!-- ============ PART 5: HEARTBEAT + CRON ============ -->
+<text class="th" x="520" y="618" text-anchor="middle" fill="var(--color-text-primary)">Part 5 — proactive layer</text>
+
+<g class="c-amber">
+  <rect x="430" y="636" width="190" height="50" rx="8" stroke-width="0.5"/>
+  <text class="th" x="525" y="654" text-anchor="middle" dominant-baseline="central">Heartbeat</text>
+  <text class="ts" x="525" y="672" text-anchor="middle" dominant-baseline="central">Every 30 min check-in</text>
+</g>
+
+<g class="c-amber">
+  <rect x="430" y="700" width="190" height="50" rx="8" stroke-width="0.5"/>
+  <text class="th" x="525" y="718" text-anchor="middle" dominant-baseline="central">Cron jobs</text>
+  <text class="ts" x="525" y="736" text-anchor="middle" dominant-baseline="central">Scheduled tasks</text>
+</g>
+
+<g class="c-red">
+  <rect x="430" y="764" width="190" height="28" rx="6" stroke-width="0.5"/>
+  <text class="ts" x="525" y="778" text-anchor="middle" dominant-baseline="central">Each fires = LLM tokens = $$</text>
+</g>
+
+<path d="M525 636 L525 610 L640 610 L640 230" fill="none" class="arr" marker-end="url(#arrow)" stroke-dasharray="4 3"/>
+<text class="ts" x="648" y="420" transform="rotate(90 648 420)" text-anchor="middle" fill="var(--color-text-tertiary)">Triggers via gateway</text>
+
+<!-- ============ PART 6: SKILLS + CLAWHUB ============ -->
+<text class="th" x="340" y="830" text-anchor="middle" fill="var(--color-text-primary)">Part 6 — skills + ClawHub</text>
+
+<g class="c-purple">
+  <rect x="40" y="846" width="600" height="100" rx="16" stroke-width="0.5"/>
+  <text class="th" x="340" y="870" text-anchor="middle" dominant-baseline="central">Skills (reusable recipe cards)</text>
+</g>
+
+<g class="c-gray">
+  <rect x="60" y="886" width="110" height="36" rx="6" stroke-width="0.5"/>
+  <text class="ts" x="115" y="904" text-anchor="middle" dominant-baseline="central">Sprint summary</text>
+</g>
+<g class="c-gray">
+  <rect x="182" y="886" width="110" height="36" rx="6" stroke-width="0.5"/>
+  <text class="ts" x="237" y="904" text-anchor="middle" dominant-baseline="central">PRD generator</text>
+</g>
+<g class="c-gray">
+  <rect x="304" y="886" width="110" height="36" rx="6" stroke-width="0.5"/>
+  <text class="ts" x="359" y="904" text-anchor="middle" dominant-baseline="central">SWOT analysis</text>
+</g>
+<g class="c-gray">
+  <rect x="426" y="886" width="110" height="36" rx="6" stroke-width="0.5"/>
+  <text class="ts" x="481" y="904" text-anchor="middle" dominant-baseline="central">Web scraper</text>
+</g>
+<g class="c-gray">
+  <rect x="548" y="886" width="76" height="36" rx="6" stroke-width="0.5"/>
+  <text class="ts" x="586" y="904" text-anchor="middle" dominant-baseline="central">5,700+</text>
+</g>
+
+<g class="c-teal">
+  <rect x="220" y="966" width="240" height="40" rx="8" stroke-width="0.5"/>
+  <text class="th" x="340" y="986" text-anchor="middle" dominant-baseline="central">ClawHub marketplace</text>
+</g>
+<line x1="340" y1="946" x2="340" y2="964" class="arr" marker-end="url(#arrow)"/>
+
+<text class="ts" x="340" y="1030" text-anchor="middle" fill="var(--color-text-secondary)">Atlas can write its own skills. Tools that build tools.</text>
+
+<path d="M560 886 L620 860 L620 545" fill="none" class="arr" marker-end="url(#arrow)" stroke-dasharray="4 3" opacity="0.4"/>
+<text class="ts" x="632" y="720" transform="rotate(90 632 720)" text-anchor="middle" fill="var(--color-text-tertiary)">MCP</text>
+
+</svg>
